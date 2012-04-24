@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-init-method="init">
+<!-- ========================= RESOURCE DEFINITIONS ========================= -->
+ 
+ 
+
+	<!-- ========================= IMPLEMENTATION CLASS DEFINITIONS ========================= -->
+
+	<!--
+	 					Login & Logout Implementations
+    -->
+    	
+	<bean id="checkdetails" class="com.eventattend.portal.spring.LoginImplementation">
+	</bean> 
+	<bean id="checkUser" class="com.eventattend.portal.spring.LoginImplementation">
+	</bean>
+	<bean id="isUserLogout" class="com.eventattend.portal.spring.LogoutImplementation">
+	</bean> 
+	       	
+	
+	<!--
+	 					User Implementations
+    -->
+    	
+	<bean id="User" class="com.eventattend.portal.spring.UserImplementation">
+	</bean>	
+	<bean id="createAccount" class="com.eventattend.portal.spring.UserImplementation">
+	</bean>
+	<bean id="confirmNewUserMailId" class="com.eventattend.portal.spring.UserImplementation">
+	</bean>
+	<bean id="updateProfileSettings" class="com.eventattend.portal.spring.UserImplementation">	
+	</bean>
+	<bean id="userTimeZone" class="com.eventattend.portal.spring.UserImplementation">	
+	</bean>	
+		
+	
+	
+	<!--
+	 					Social Media Implementations
+    -->
+	
+	<bean id="updateProfileSocialMediaInfo" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="initSocialMedia" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="addTwitterToken" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>  
+	<bean id="searchTweets" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="deleteTwitterToken" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="addLinkedInToken" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="addFaceBookToken" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean> 	
+	<bean id="deleteLinkedInToken" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="deleteFaceBookToken" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>		
+    <bean id="publicProfile" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="checkAlreadyFriend" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+		<bean id="inviteFriendInSM" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>	
+	<bean id="getSocialMediaImageURL" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>
+	<bean id="getSocialMediaProfileData" class="com.eventattend.portal.spring.SocialMediaImplementation">
+	</bean>		
+			
+	<!--
+	 					Event Implementations
+    -->
+	
+	<bean id="joinEvent" class="com.eventattend.portal.spring.EventImplementation">
+	</bean>  
+	<bean id="unjoinEvent" class="com.eventattend.portal.spring.EventImplementation">
+	</bean> 	
+	<bean id="eventSearchTag" class="com.eventattend.portal.spring.EventImplementation">
+	</bean> 	
+	
+	<bean id="eventDetail" class="com.eventattend.portal.spring.EventImplementation">
+	</bean> 
+	<bean id="listEvents" class="com.eventattend.portal.spring.EventImplementation">
+	</bean> 	
+	<bean id="eventAttendees" class="com.eventattend.portal.spring.EventImplementation">
+	</bean> 
+	 
+	
+	<!--
+	 					Session Implementations
+    -->
+
+	<bean id="attendSession" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean> 
+	<bean id="leaveSession" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="userInLiveSession" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="liveSessionAttendees" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="sessionAttendees" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="sessionDetail" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="updateSessionComment" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="sessionCommentsList" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>	
+	<bean id="sessionInformation" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>      	
+	<bean id="sessionSpeakerInfo" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="resetLiveSessionInfo" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="getSessionByEventId" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>  	
+	<bean id="sessionSearchTag" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="saveSessionIdForSpeaker" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	<bean id="removeSessionIdForSpeaker" class="com.eventattend.portal.spring.SessionImplementation">
+	</bean>
+	
+
+	<!--
+	 					Attendee Implementations
+    -->
+
+	<bean id="sendAttendeeMail" class="com.eventattend.portal.spring.AttendeeImplementation">
+	</bean> 
+	<bean id="getAttendees" class="com.eventattend.portal.spring.AttendeeImplementation">
+	</bean>
+	<bean id="updateSessionCommentsLike" class="com.eventattend.portal.spring.AttendeeImplementation">
+	</bean>
+	
+	
+	<!--
+	 					Maintenance Implementations
+    -->
+
+	<bean id="addEvent" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean> 
+	<bean id="events" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	<bean id="event" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	
+	<bean id="updateEvent" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	
+	<bean id="deleteEvent" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	<bean id="sessions" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	<bean id="session" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	<bean id="deleteSession" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	<bean id="addSession" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	<bean id="updateSession" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	<bean id="attendee" class="com.eventattend.portal.spring.MaintenanceImplementation">
+	</bean>
+	
+	
+	
+	
+</beans>

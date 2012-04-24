@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app-settings>
+
+	<app-mode>development</app-mode>
+
+	<mail>
+	<mail-id>smartadmin@visiontss.com</mail-id>
+	<password>smartadmin</password>	
+	</mail>
+	
+</app-settings>

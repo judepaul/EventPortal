@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: db4o-8.0.165.14944-all-java5.jar 
+ EVENTPORTALEXCEPTIONS.jar
+

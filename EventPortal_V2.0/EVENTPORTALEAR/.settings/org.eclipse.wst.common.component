@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EVENTPORTALEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="EVENTPORTALWEB.war" deploy-path="/" handle="module:/resource/EVENTPORTALWEB/EVENTPORTALWEB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALSPRING.jar" deploy-path="/" handle="module:/resource/EVENTPORTALSPRING/EVENTPORTALSPRING">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALEAR/spring.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALBL.jar" deploy-path="/" handle="module:/resource/EVENTPORTALBL/EVENTPORTALBL">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALBO.jar" deploy-path="/" handle="module:/resource/EVENTPORTALBO/EVENTPORTALBO">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALCOMMONS.jar" deploy-path="/" handle="module:/resource/EVENTPORTALCOMMONS/EVENTPORTALCOMMONS">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALDAO.jar" deploy-path="/" handle="module:/resource/EVENTPORTALDAO/EVENTPORTALDAO">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALDTO.jar" deploy-path="/" handle="module:/resource/EVENTPORTALDTO/EVENTPORTALDTO">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALMODEL.jar" deploy-path="/" handle="module:/resource/EVENTPORTALMODEL/EVENTPORTALMODEL">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALUTIL.jar" deploy-path="/" handle="module:/resource/EVENTPORTALUTIL/EVENTPORTALUTIL">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db4o-7.12.156.14667-core-java5.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/DB4O/db4o-7.12.156.14667-core-java5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db4o-7.12.156.14667-cs-java5.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/DB4O/db4o-7.12.156.14667-cs-java5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db4o-7.12.156.14667-cs.optional-java5.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/DB4O/db4o-7.12.156.14667-cs.optional-java5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="twitter4j-core-2.1.3-SNAPSHOT.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/TWITTER/twitter4j-core-2.1.3-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/SPRING/spring.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EVENTPORTALEXCEPTIONS.jar" deploy-path="/" handle="module:/resource/EVENTPORTALEXCEPTIONS/EVENTPORTALEXCEPTIONS">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.3.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/LINKEDIN/commons-codec-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="linkedin-j.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/LINKEDIN/linkedin-j.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="signpost-core-1.2.1.1.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/LINKEDIN/signpost-core-1.2.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="db4o-8.0.165.14944-all-java5.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/DB4O/db4o-8.0.165.14944-all-java5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="json-20080701.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/FACEBOOK/json-20080701.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.2.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/FACEBOOK/commons-lang-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="facebook-java-api-3.0.2.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/FACEBOOK/facebook-java-api-3.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="activation.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/MAIL/activation.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail.jar" deploy-path="/" handle="module:/classpath/lib/EVENTPORTALJARS/MAIL/mail.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

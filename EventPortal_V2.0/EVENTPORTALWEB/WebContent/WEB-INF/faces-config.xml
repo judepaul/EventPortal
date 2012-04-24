@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+ <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~Managed Beans - Starts here   ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+ <managed-bean>
+  <managed-bean-name>loginBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.LoginBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>logoutBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.LogoutBean</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>eventBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.EventBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>userBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.UserBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>socialMediaBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.SocialMediaBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>sessionBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.SessionBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>attendeeBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.AttendeeBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>applicationBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.ApplicationBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>maintenanceBean</managed-bean-name>
+  <managed-bean-class>com.eventattend.portal.web.bean.MaintenanceBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~ Managed Beans - Ends here ~~~~~~~~~~~~~~~~~~~~~~~~ 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~ Navigation Rules - Starts here ~~~~~~~~~~~~~~~~~~~~~~~~ 
+  Login Page -->
+ <navigation-rule>
+  <from-view-id>/common/welcome_login.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>failure</from-outcome>
+   <to-view-id>/common/welcome_login.jsp</to-view-id>  
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>register</from-outcome>
+   <to-view-id>/views/account_create_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>event</from-outcome>
+   <to-view-id>/views/events_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!--  Register Page -->
+ <navigation-rule>
+  <from-view-id>/views/account_create_main.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>success</from-outcome>
+   <to-view-id>/views/account_create_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!--  Event Page -->
+ <navigation-rule>
+  <from-view-id>/views/events_main.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>agenda</from-outcome>
+   <to-view-id>/views/event_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!--  Agenda Page -->
+ <navigation-rule>
+  <from-view-id>/views/event_main.jsp</from-view-id>
+ </navigation-rule>
+ <!--  Session Summary Page -->
+ <navigation-rule>
+  <from-view-id>/views/session_main.jsp</from-view-id>
+  <navigation-case>
+   <from-outcome>SESSIONDETAIL</from-outcome>
+   <to-view-id>/views/live_session_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~ Navigation Rules - Ends here ~~~~~~~~~~~~~~~~~~~~~~~~ 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~ Global Navigation Rules - Starts here ~~~~~~~~~~~~~~~~~~~~~~~~ 
+  Global Forwards -->
+ <navigation-rule>
+  <from-view-id>*</from-view-id>
+  <navigation-case>
+   <from-outcome>login</from-outcome>
+   <to-view-id>/common/welcome_login.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>logout</from-outcome>
+   <to-view-id>/common/welcome_login.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>profile</from-outcome>
+   <to-view-id>/views/profile_settings_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>event</from-outcome>
+   <to-view-id>/views/events_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>agenda</from-outcome>
+   <to-view-id>/views/event_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>session</from-outcome>
+   <to-view-id>/views/session_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>SESSIONDETAIL</from-outcome>
+   <to-view-id>/views/live_session_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+  <navigation-case>
+   <from-outcome>MAINTENANCE</from-outcome>
+   <to-view-id>/views/manage_data_main.jsp</to-view-id>
+   <redirect/>
+  </navigation-case>
+ </navigation-rule>
+ <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~  Application  config - Ends here ~~~~~~~~~~~~~~~~~~~~~~~~ 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~ Global Navigation Rules - Starts here ~~~~~~~~~~~~~~~~~~~~~~~~ 
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~  Application  config - Starts here ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+ <application>
+  <locale-config>
+   <default-locale>en</default-locale>
+  </locale-config>
+  <message-bundle>com.eventattend.portal.web.resources.ApplicationResources</message-bundle>
+ </application>
+ <lifecycle>
+  <phase-listener id="nocache">com.eventattend.portal.web.util.CacheControlPhaseListener</phase-listener>
+ </lifecycle>
+</faces-config>

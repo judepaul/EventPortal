@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="EVENTPORTALCOMMONS"/>
+ </depends-on-projects>
+ <used-by-projects>
+  <project name="EVENTPORTALDAO"/>
+  <project name="EVENTPORTALBL"/>
+ </used-by-projects>
+ <paths>
+  <path value="C:/Program Files/Java/jre6/lib/ext/sunjce_provider.jar"/>
+  <path value="C:/Program Files/Java/jre6/lib/ext/dnsns.jar"/>
+  <path value="C:/Program Files/Java/jre6/lib/ext/sunpkcs11.jar"/>
+  <path value="C:/Program Files/Java/jre6/lib/ext/sunmscapi.jar"/>
+  <path value="C:/Program Files/Java/jre6/lib/resources.jar"/>
+ </paths>
+ <validation>
+  <core/>
+  <el/>
+ </validation>
+</kb-project>

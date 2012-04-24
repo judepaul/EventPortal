@@ -1,0 +1,4 @@
+#Fri Apr 20 17:41:17 GMT+05:30 2012
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="JBoss v5.0" location\="D\:/jboss-5.0.1.GA/bin" name\="JBoss v5.0" runtime-type-id\="org.eclipse.jst.server.generic.runtime.jboss5" server_definition_id\="org.eclipse.jst.server.generic.runtime.jboss5" timestamp\="0" vm-install-id\="1334921088883" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n    <map key\="generic_server_instance_properties" serverRootDirectory\="D\:/jboss-5.0.1.GA"/>\r\n  </runtime>\r\n</runtimes>\r\n
+eclipse.preferences.version=1

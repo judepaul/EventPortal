@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#index.jsp" PATH="/index.jsp"
+  SHAPE="80,112,50,25" model-entity="JSFProcessGroup" persistent="true"/>
+ <PROCESS-ITEM NAME="rules:*" PATH="*" SHAPE="96,385,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:*:0" NAME="item" PATH="*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="login::#common#welcome_login.jsp"
+    NAME="output" PATH="/common/welcome_login.jsp"
+    TARGET="rules:#common#welcome_login.jsp" TITLE="login" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="logout::#common#welcome_login.jsp"
+    NAME="output1" PATH="/common/welcome_login.jsp"
+    TARGET="rules:#common#welcome_login.jsp" TITLE="logout" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="profile::#views#profile_settings_main.jsp"
+    NAME="output2" PATH="/views/profile_settings_main.jsp"
+    TARGET="rules:#views#profile_settings_main.jsp" TITLE="profile" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="event::#views#events_main.jsp"
+    NAME="output3" PATH="/views/events_main.jsp"
+    TARGET="rules:#views#events_main.jsp" TITLE="event" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="agenda::#views#event_main.jsp"
+    NAME="output4" PATH="/views/event_main.jsp"
+    TARGET="rules:#views#event_main.jsp" TITLE="agenda" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="session::#views#session_main.jsp"
+    NAME="output5" PATH="/views/session_main.jsp"
+    TARGET="rules:#views#session_main.jsp" TITLE="session" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="SESSIONDETAIL::#views#live_session_main.jsp"
+    NAME="output6" PATH="/views/live_session_main.jsp"
+    TARGET="rules:#views#live_session_main.jsp" TITLE="SESSIONDETAIL" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="MAINTENANCE::#views#manage_data_main.jsp"
+    NAME="output7" PATH="/views/manage_data_main.jsp"
+    TARGET="rules:#views#manage_data_main.jsp" TITLE="MAINTENANCE" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#views#account_create_main.jsp"
+  PATH="/views/account_create_main.jsp" SHAPE="528,561,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#views#account_create_main.jsp:0" NAME="item"
+   PATH="/views/account_create_main.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#views#account_create_main.jsp"
+    NAME="output" PATH="/views/account_create_main.jsp"
+    TARGET="rules:#views#account_create_main.jsp" TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#views#events_main.jsp"
+  PATH="/views/events_main.jsp" SHAPE="704,369,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#views#events_main.jsp:0" NAME="item"
+   PATH="/views/events_main.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="agenda::#views#event_main.jsp" NAME="output"
+    PATH="/views/event_main.jsp" TARGET="rules:#views#event_main.jsp"
+    TITLE="agenda" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#views#profile_settings_main.jsp"
+  PATH="/views/profile_settings_main.jsp" SHAPE="256,577,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#views#event_main.jsp"
+  PATH="/views/event_main.jsp" SHAPE="528,561,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#views#event_main.jsp:0" NAME="item"
+   PATH="/views/event_main.jsp" model-entity="JSFProcessItem"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#views#session_main.jsp"
+  PATH="/views/session_main.jsp" SHAPE="304,609,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#views#session_main.jsp:0" NAME="item"
+   PATH="/views/session_main.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="SESSIONDETAIL::#views#live_session_main.jsp"
+    NAME="output" PATH="/views/live_session_main.jsp"
+    TARGET="rules:#views#live_session_main.jsp" TITLE="SESSIONDETAIL" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#views#live_session_main.jsp"
+  PATH="/views/live_session_main.jsp" SHAPE="304,641,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#common#welcome_login.jsp"
+  PATH="/common/welcome_login.jsp" SHAPE="32,657,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#common#welcome_login.jsp:0" NAME="item"
+   PATH="/common/welcome_login.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="failure::#common#welcome_login.jsp"
+    NAME="output" PATH="/common/welcome_login.jsp"
+    TARGET="rules:#common#welcome_login.jsp" TITLE="failure" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="register::#views#account_create_main.jsp"
+    NAME="output2" PATH="/views/account_create_main.jsp"
+    TARGET="rules:#views#account_create_main.jsp" TITLE="register" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="event::#views#events_main.jsp"
+    NAME="output3" PATH="/views/events_main.jsp"
+    TARGET="rules:#views#events_main.jsp" TITLE="event" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#views#manage_data_main.jsp"
+  PATH="/views/manage_data_main.jsp" SHAPE="336,369,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
