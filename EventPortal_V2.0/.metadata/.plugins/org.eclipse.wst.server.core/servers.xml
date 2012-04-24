@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servers>
-  <server hostname="localhost" id="JBoss v5.0 at localhost" name="JBoss v5.0 at localhost" runtime-id="JBoss v5.0" server-type="org.eclipse.jst.server.generic.jboss5" server-type-id="org.eclipse.jst.server.generic.jboss5" start-timeout="50" stop-timeout="15" timestamp="1">
-    <map jndiPort="1099" key="generic_server_instance_properties" port="8080" serverAddress="127.0.0.1" serverConfig="default"/>
-    <list key="modules" value0="EVENTPORTALEAR::org.eclipse.jst.jee.server:EVENTPORTALEAR::jst.ear::5.0"/>
-    <list key="Generic_Server_Modules_List" value0="org.eclipse.jst.jee.server:EVENTPORTALEAR"/>
-  </server>
-</servers>

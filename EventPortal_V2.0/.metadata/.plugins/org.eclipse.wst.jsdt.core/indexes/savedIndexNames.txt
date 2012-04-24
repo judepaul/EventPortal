@@ -1,7 +1,0 @@
-INDEX VERSION 1.121+E:\eventportal\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3557371522.index
-208226290.index
-2232417735.index
-1896382191.index
-3816185785.index
-2950678923.index
