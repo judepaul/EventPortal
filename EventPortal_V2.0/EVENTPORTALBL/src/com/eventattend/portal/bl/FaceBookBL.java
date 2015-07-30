@@ -274,7 +274,7 @@ public class FaceBookBL extends BusinessLayer {
 		userClient = getUserClient((String) faceBookDTO.getAccessToken());
 		String friendId=faceBookDTO.getProfileId();
 		System.out.println("Facebook inviteFriend >>> "+friendId);
-		String emailHash = generateEmailHash("ananthas@kyyba.net");
+		String emailHash = generateEmailHash("mani@maniempire.com");
 		System.out.println("emailHash >>> "+emailHash);
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email_hashes",emailHash );
