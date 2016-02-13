@@ -1,10 +1,10 @@
 /*
- * Copyright 2010-2011 Kyyba Ventures,Inc. All Rights Reserved.
+ * Copyright 2015-2016 Seedcube LLC. All Rights Reserved.
  * This software is the confidential and proprietary information of
- * Kyyba ventures("Confidential Information").  You shall not
+ * Seedcube("Confidential Information").  You shall not
  * disclose such Confidential Information and shall use it only in
  * accordance with the terms of the license agreement you entered into 
- * with Kyyba Ventures.
+ * with Seedcube.
  * 
  * CHANGE HISTORY
  * ==================================================================================
@@ -22,8 +22,8 @@ import java.util.List;
  * @author mmanimaran
  * @Date Oct 19, 2010
  * 
- * Copyright 2010-2011 Kyyba Ventures,Inc. All Rights Reserved.
- * This software is the proprietary information of Kyyba Ventures Inc.
+ * Copyright 2015-2016 Seedcube LLC. All Rights Reserved.
+ * This software is the proprietary information of Seedcube LLC.
  * Use is subject to license terms.
  */
 public class LinkedInDTO  extends DataTransferObject {

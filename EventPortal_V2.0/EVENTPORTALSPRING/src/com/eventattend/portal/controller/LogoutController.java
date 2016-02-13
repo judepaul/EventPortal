@@ -5,8 +5,8 @@
  * @author A.Jude
  * @Date 14 Mar 2011
  * 
- * Copyright 2009-2010 Kyyba Ventures,Inc. All Rights Reserved.
- * This software is the proprietary information of Kyyba Ventures Inc.
+ * Copyright 2009-2010 Seedcube LLC. All Rights Reserved.
+ * This software is the proprietary information of Seedcube LLC.
  * Use is subject to license terms.
  */
 

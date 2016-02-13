@@ -22,8 +22,8 @@ import com.eventattend.portal.exceptions.EventPortalException;
  * @author M.Mani Maran
  * @Date 21 Sep 2010
  * 
- * Copyright 2009-2010 Kyyba Ventures,Inc. All Rights Reserved.
- * This software is the proprietary information of Kyyba Ventures Inc.
+ * Copyright 2009-2010 Seedcube LLC. All Rights Reserved.
+ * This software is the proprietary information of Seedcube LLC.
  * Use is subject to license terms.
  */
 
